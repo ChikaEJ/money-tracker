@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7e2f96c-f81b-4a3b-81f4-f07fbe19a9b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_family_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/money-tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/money-tracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/families_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/families_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/families/delete.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/families/destroy.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/families_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/families_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/family.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/family.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/families/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/families/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/families/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/families/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/families/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/families/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,22 +34,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/chika/MyFiles/RoR/money-tracker&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/chika/MyFiles/RoR/money-tracker",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Rails.money-tracker">
     <configuration name="money-tracker" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="money-tracker" />
@@ -127,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734196985487</updated>
       <workItem from="1734196986808" duration="22713000" />
-      <workItem from="1734411420380" duration="7463000" />
+      <workItem from="1734411420380" duration="14574000" />
     </task>
     <servers />
   </component>

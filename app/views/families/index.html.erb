@@ -1,8 +1,6 @@
 <h1>Families</h1>
-<% if !@families.empty? %>
-  <% @families.each do |family| %>
-    <h3><%= family.family_name %></h3>
-  <% end %>
+<% if has_family?(current_user) %>
+  <h3>Your family is <%= current_user_family(current_user).family_name %></h3>
 <% else %>
   <%= render "layouts/family_form", { family: @family } %>
 <% end %>

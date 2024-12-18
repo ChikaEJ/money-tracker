@@ -1,2 +1,6 @@
 <h1>Families#new</h1>
-<%= render "layouts/family_form" %>
+<% if has_family? current_user %>
+  <h3>You already have a family.</h3>
+<% else %>
+  <%= render "layouts/family_form", { family: @family } %>
+<% end %>

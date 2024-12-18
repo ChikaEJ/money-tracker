@@ -1,4 +1,5 @@
 class FamiliesController < ApplicationController
+  include FamiliesHelper
   before_action :set_family, only: [ :show, :update, :destroy ]
   def index
     @families = Family.all
@@ -12,6 +13,8 @@ class FamiliesController < ApplicationController
   def create
     @family = Family.new(family_params)
     if @family.save
+      current_user.family_id = @family.id
+      current_user.save
       redirect_to family_path(@family)
     else
       flash.now[:error] = "Failed to create family."
@@ -20,7 +23,12 @@ class FamiliesController < ApplicationController
   end
 
   def new
-    @family = Family.new
+    if has_family? current_user
+      redirect_to root_path
+    else
+      @family = Family.new
+    end
+
   end
 
   def update
@@ -30,6 +38,7 @@ class FamiliesController < ApplicationController
   end
 
   def show
+    @users = @family.users
   end
 
   def destroy
@@ -43,6 +52,13 @@ class FamiliesController < ApplicationController
   end
 
   def set_family
-    @family = Family.find(params[:id])
+    if current_user&.family_id
+      @family = Family.find(current_user.family_id)
+    else if current_user.family_id.nil?
+      redirect_to new_family_path
+         else
+      redirect_to root_path
+         end
+    end
   end
 end
