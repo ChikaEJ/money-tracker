@@ -33,8 +33,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[8.0]
       # t.datetime :locked_at
 
       t.string :name
-      t.string :family-member
-      t.references :owner
+      t.boolean :is_owner_of_family
+      t.references :family
 
       t.timestamps null: false
     end
