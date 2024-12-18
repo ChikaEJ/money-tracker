@@ -2,10 +2,15 @@ class FamiliesController < ApplicationController
   before_action :set_family, only: [ :show, :update, :destroy ]
   def index
     @families = Family.all
+    if @families.empty?
+      @family = Family.new
+    else
+      @families
+    end
   end
 
   def create
-    @family = Family.create(params[:family])
+    @family = Family.new(family_params)
     if @family.save
       redirect_to family_path(@family)
     else
@@ -34,7 +39,7 @@ class FamiliesController < ApplicationController
 
   private
   def family_params
-    params.require(:family).permit(:name)
+    params.require(:family).permit(:family_name)
   end
 
   def set_family

@@ -1,0 +1,7 @@
+<%= form_with model: family do |form| %>
+  <div class="field">
+    <%= form.label :family_name, "Family Name" %>
+    <%= form.text_field :family_name %>
+  </div>
+  <%= form.submit "Create Family" %>
+<% end %>
