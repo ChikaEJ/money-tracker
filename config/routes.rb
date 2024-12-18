@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get "families/index"
+  get "families/create"
+  get "families/new"
+  get "families/update"
+  get "families/show"
+  get "families/delete"
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
