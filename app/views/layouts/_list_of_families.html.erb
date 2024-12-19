@@ -1,0 +1,6 @@
+<%= form_with(model: user) do |form| %>
+  <div class="field">
+    <%= form.label :family_id, "Family Name" %>
+    <%= form.collection_select :family_is, Family.all, :id, :family_name, {prompt: "Choose a Family"} %>
+  </div>
+<% end %>

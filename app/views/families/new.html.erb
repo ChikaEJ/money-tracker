@@ -1,6 +1,9 @@
 <h1>Families#new</h1>
-<% if has_family? current_user %>
+<% if !current_user&.family_id.nil? %>
   <h3>You already have a family.</h3>
 <% else %>
+  <h3>Select from list</h3>
+  <%= render "layouts/list_of_families", {user: @user} %>
+  <h3>Or create new one: </h3>
   <%= render "layouts/family_form", { family: @family } %>
 <% end %>
